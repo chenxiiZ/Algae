@@ -1,60 +1,116 @@
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { useState, useRef } from 'react';
+import { Button } from '@/components/ui/button';
+import React from 'react';
+export function Classify() {
+    const [preview, setPreview] = useState<string>('');
+    const [formData, setFormData] = useState({
+        time: '',
+        date: '',
+        location: ''
+    });
+    const fileInputRef = useRef<HTMLInputElement | null>(null);
 
-export default function Classify() {
+    const handleFile = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = () => typeof reader.result === 'string' && setPreview(reader.result);
+        reader.readAsDataURL(file);
+    };
+
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log('Form Data:', { ...formData, image: preview });
+        alert('Check console for form data');
+    };
+
     return (
-        <div className="flex flex-col items-center justify-center">
-            <h1 className="text-3xl font-bold mb-10 mt-4">Algae Image Classification</h1>
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6 space-y-6">
+            {/* Image Upload Section */}
+            <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
+                <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleFile}
+                    ref={fileInputRef}
+                    className="hidden"
+                />
 
-            {/* Upload Image Box */}
-            <Card className="w-[40rem] shadow-md">
-                <CardHeader>
-                    <h2 className="text-xl font-medium text-center">
-                        Upload an Image
-                    </h2>
-                </CardHeader>
-
-                {/* Upload Area */}
-                <CardContent>
-                    {/* Upload Box */}
-                    <div className="border border-gray-300 border-dashed h-[10rem] rounded-md p-6 text-center mb-6">
-                        <Label
-                            htmlFor="imageUpload"
-                            className="block text-gray-500 cursor-pointer hover:text-gray-700"
-                        >
-                            <svg
-                                className="mx-auto h-12 w-12 text-gray-400"
-                                stroke="currentColor"
-                                fill="none"
-                                viewBox="0 0 48 48"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M14 30v10h-4a2 2 0 01-2-2V22m26 18v-6m-17.5-9H23l3 4h8l-11-16m8 22h4a2 2 0 002-2V10m-8 22v4m-5-4v2a2 2 0 002 2h6"
-                                    strokeWidth={2}
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
-                            <span className="mt-2 block text-sm font-medium">
-                                Click to upload or drag-and-drop
-                            </span>
-                        </Label>
-                        <Input
-                            id="imageUpload"
-                            type="file"
-                            className="sr-only"
-                            accept="image/*"
+                {preview ? (
+                    <div className="space-y-4">
+                        <img
+                            src={preview}
+                            alt="Preview"
+                            className="max-h-48 mx-auto rounded-lg object-cover"
                         />
+                        <Button
+                            type="button"
+                            onClick={() => fileInputRef.current?.click()}
+                            variant="outline"
+                        >
+                            Change Image
+                        </Button>
                     </div>
+                ) : (
+                    <div
+                        className="cursor-pointer space-y-2"
+                        onClick={() => fileInputRef.current?.click()}
+                    >
+                        <p className="text-gray-500">Click to upload an image</p>
+                        <p className="text-sm text-gray-400">PNG, JPG, JPEG up to 5MB</p>
+                    </div>
+                )}
+            </div>
 
-                    <div className="flex justify-center">
-                        <Button variant="default">Re-upload</Button>
-                    </div>
-                </CardContent>
-            </Card>
-        </div>
+            {/* Form Inputs */}
+            <div className="space-y-4">
+                <div>
+                    <label className="block text-sm font-medium mb-2">Time</label>
+                    <input
+                        name="time"
+                        type="text"
+                        value={formData.time}
+                        onChange={handleInputChange}
+                        className="w-full p-2 border rounded-md"
+                        placeholder="Example: 2:30 PM"
+                    />
+                </div>
+
+                <div>
+                    <label className="block text-sm font-medium mb-2">Date</label>
+                    <input
+                        name="date"
+                        type="text"
+                        value={formData.date}
+                        onChange={handleInputChange}
+                        className="w-full p-2 border rounded-md"
+                        placeholder="Example: March 15, 2024"
+                    />
+                </div>
+
+                <div>
+                    <label className="block text-sm font-medium mb-2">Location</label>
+                    <input
+                        name="location"
+                        type="text"
+                        value={formData.location}
+                        onChange={handleInputChange}
+                        className="w-full p-2 border rounded-md"
+                        placeholder="Example: Central Park, NY"
+                    />
+                </div>
+            </div>
+
+            <Button type="submit" className="w-full">Submit</Button>
+        </form>
     );
 }
+export default Classify;
