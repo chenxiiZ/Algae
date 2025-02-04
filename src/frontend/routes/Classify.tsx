@@ -33,84 +33,87 @@ export function Classify() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6 space-y-6">
-            {/* Image Upload Section */}
-            <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-                <input
-                    type="file"
-                    accept="image/*"
-                    onChange={handleFile}
-                    ref={fileInputRef}
-                    className="hidden"
-                />
+        <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 space-y-6 bg-[#E4Eb9C] mt-10 rounded-xl">
+            <h1 className="font-bold text-3xl flex">Algae Image Classification</h1>
 
-                {preview ? (
-                    <div className="space-y-4">
-                        <img
-                            src={preview}
-                            alt="Preview"
-                            className="max-h-48 mx-auto rounded-lg object-cover"
-                        />
-                        <Button
-                            type="button"
+                <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
+                    <input
+                        type="file"
+                        accept="image/*"
+                        onChange={handleFile}
+                        ref={fileInputRef}
+                        className="hidden"
+                    />
+
+                    {preview ? (
+                        <div className="space-y-4">
+                            <img
+                                src={preview}
+                                alt="Preview"
+                                className="max-h-48 mx-auto rounded-lg object-cover"
+                            />
+                            <Button
+                                type="button"
+                                onClick={() => fileInputRef.current?.click()}
+                                variant="outline"
+                            >
+                                Change Image
+                            </Button>
+                        </div>
+                    ) : (
+                        <div
+                            className="cursor-pointer space-y-2"
                             onClick={() => fileInputRef.current?.click()}
-                            variant="outline"
                         >
-                            Change Image
-                        </Button>
+                            <p className="text-gray-500">Click to upload an image</p>
+                            <p className="text-sm text-gray-400">PNG, JPG, JPEG up to 5MB</p>
+                        </div>
+                    )}
+                </div>
+
+                {/* Form Inputs */}
+                <div className="space-y-4">
+                    <div>
+                        <label className="block text-sm font-medium mb-2">Time: </label>
+                        <input
+                            name="time"
+                            type="text"
+                            value={formData.time}
+                            onChange={handleInputChange}
+                            className="w-full p-2 border rounded-md"
+                            placeholder="Example: 2:30 PM"
+                        />
                     </div>
-                ) : (
-                    <div
-                        className="cursor-pointer space-y-2"
-                        onClick={() => fileInputRef.current?.click()}
-                    >
-                        <p className="text-gray-500">Click to upload an image</p>
-                        <p className="text-sm text-gray-400">PNG, JPG, JPEG up to 5MB</p>
+
+                    <div>
+                        <label className="block text-sm font-medium mb-2">Date: </label>
+                        <input
+                            name="date"
+                            type="text"
+                            value={formData.date}
+                            onChange={handleInputChange}
+                            className="w-full p-2 border rounded-md"
+                            placeholder="Example: March 15, 2024"
+                        />
                     </div>
-                )}
-            </div>
 
-            {/* Form Inputs */}
-            <div className="space-y-4">
-                <div>
-                    <label className="block text-sm font-medium mb-2">Time</label>
-                    <input
-                        name="time"
-                        type="text"
-                        value={formData.time}
-                        onChange={handleInputChange}
-                        className="w-full p-2 border rounded-md"
-                        placeholder="Example: 2:30 PM"
-                    />
+                    <div>
+                        <label className="block text-sm font-medium mb-2">Location: </label>
+                        <input
+                            name="location"
+                            type="text"
+                            value={formData.location}
+                            onChange={handleInputChange}
+                            className="w-full p-2 border rounded-md"
+                            placeholder="Example: Central Park, NY"
+                        />
+                    </div>
                 </div>
 
-                <div>
-                    <label className="block text-sm font-medium mb-2">Date</label>
-                    <input
-                        name="date"
-                        type="text"
-                        value={formData.date}
-                        onChange={handleInputChange}
-                        className="w-full p-2 border rounded-md"
-                        placeholder="Example: March 15, 2024"
-                    />
-                </div>
-
-                <div>
-                    <label className="block text-sm font-medium mb-2">Location</label>
-                    <input
-                        name="location"
-                        type="text"
-                        value={formData.location}
-                        onChange={handleInputChange}
-                        className="w-full p-2 border rounded-md"
-                        placeholder="Example: Central Park, NY"
-                    />
-                </div>
-            </div>
-
-            <Button type="submit" className="w-full">Submit</Button>
+                <Button type="submit" className="w-full font-bold">Submit</Button>
         </form>
+
     );
 }
+
 export default Classify;

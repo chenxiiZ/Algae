@@ -9,7 +9,7 @@ export default function Navbar() {
         <nav className="bg-[#2D5128] text-white h-[5rem] text-2xl flex items-center justify-between px-10">
 
             <div className="flex items-center gap-4">
-                <img src="/HKUEdu.webp" alt="logo" className="h-12 w-auto" />
+                <img src="/HKUEdu.webp" alt="logo" className="h-[60px] w-auto" />
             </div>
 
 
