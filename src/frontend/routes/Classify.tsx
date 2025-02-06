@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import React from 'react';
+import Beach from "@/assets/beachpic.jpeg";
 export function Classify() {
     const [preview, setPreview] = useState<string>('');
     const [formData, setFormData] = useState({
@@ -33,8 +34,9 @@ export function Classify() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 space-y-6 bg-[#E4Eb9C] mt-10 rounded-xl">
-            <h1 className="font-bold text-3xl flex">Algae Image Classification</h1>
+        <div className="bg-cover h-full w-full flex" style={{ backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${Beach})`,}}>
+        <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 space-y-6 bg-[#EBEBEB] mt-10 mb-10">
+            <h1 className="font-bold text-3xl flex text-[#2D5128]">Algae Image Classification</h1>
 
                 <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
                     <input
@@ -71,7 +73,7 @@ export function Classify() {
                     )}
                 </div>
 
-                {/* Form Inputs */}
+
                 <div className="space-y-4">
                     <div>
                         <label className="block text-sm font-medium mb-2">Time: </label>
@@ -112,7 +114,7 @@ export function Classify() {
 
                 <Button type="submit" className="w-full font-bold">Submit</Button>
         </form>
-
+        </div>
     );
 }
 
