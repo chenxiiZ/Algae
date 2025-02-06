@@ -22,23 +22,23 @@ export default function Footer() {
             <div className="flex flex-col text-xl items-start">
                 <h3 className="mb-5">Education</h3>
                 <div className="flex flex-col space-y-2">
-                    <Link to="/classify" className="hover:underline text-sm">
-                        What is Algae?
+                    <Link to="/what-are-algae" className="hover:underline text-sm">
+                        What are Algae?
                     </Link>
-                    <Link to="/education" className="hover:underline text-sm">
-                        Why is Algae important?
+                    <Link to="/why-are-algae-important" className="hover:underline text-sm">
+                        Why are Algae important?
                     </Link>
-                    <Link to="/education" className="hover:underline text-sm">
+                    <Link to="/problems-caused-by-algae" className="hover:underline text-sm">
                         Problems caused by Algae
                     </Link>
-                    <Link to="/education" className="hover:underline text-sm">
+                    <Link to="/types-of-algae" className="hover:underline text-sm">
                         Types of Algae
                     </Link>
-                    <Link to="/education" className="hover:underline text-sm">
+                    <Link to="/algae-and-climate" className="hover:underline text-sm">
                         Algae and Climate Change
                     </Link>
-                    <Link to="/education" className="hover:underline text-sm">
-                        Fun Facts!
+                    <Link to="/fun-facts" className="hover:underline text-sm">
+                        Fun Facts about Algae!
                     </Link>
                 </div>
             </div>
