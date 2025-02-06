@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
 import { AlignJustify } from 'lucide-react';
-import { useState } from 'react'; // handle the burger menu toggle
+import { useState } from 'react';
+import Education from "@/frontend/components/Education.tsx";
+
+
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false); // menu visibility
 
     return (
-        <nav className="bg-[#2D5128] text-white h-[5rem] text-2xl flex items-center justify-between px-10">
+        <nav className="bg-[#404C3C] text-white h-[5rem] text-2xl flex items-center justify-between px-10">
 
             <div className="flex items-center gap-4">
                 <img src="/HKUEdu.webp" alt="logo" className="h-[60px] w-auto" />
@@ -26,8 +29,10 @@ export default function Navbar() {
                 }`}
             >
                 <Link to="/classify">Classify</Link>
-                <Link to="/education">Education</Link>
-                <Link to="/contact-us">Contact Us</Link>
+                <div className="relative">
+                    <Education/> {/* Dropdown Button */}
+                </div>
+                <Link to="/about-us">About Us</Link>
             </div>
         </nav>
     );
