@@ -35,7 +35,7 @@ export function Classify() {
 
     return (
         <div className="bg-cover h-full w-full flex" style={{ backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${Beach})`,}}>
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 space-y-6 bg-[#EBEBEB] mt-10 mb-10">
+        <form onSubmit={handleSubmit} className="w-[500px] mx-auto p-6 space-y-6 bg-[#EBEBEB] mt-10 mb-10">
             <h1 className="font-bold text-3xl flex text-[#2D5128]">Algae Image Classification</h1>
 
                 <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">

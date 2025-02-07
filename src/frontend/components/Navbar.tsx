@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { AlignJustify } from 'lucide-react';
 import { useState } from 'react';
 import Education from "@/frontend/components/Education.tsx";
-
+import Resources from "@/frontend/components/Resources.tsx";
 
 
 export default function Navbar() {
@@ -30,9 +30,12 @@ export default function Navbar() {
             >
                 <Link to="/classify">Classify</Link>
                 <div className="relative">
-                    <Education/> {/* Dropdown Button */}
+                    <Education/>
                 </div>
                 <Link to="/about-us">About Us</Link>
+                <div className="relative">
+                    <Resources/>
+                </div>
             </div>
         </nav>
     );

@@ -1,10 +1,9 @@
 import Beach from "../../assets/beachpic.jpeg";
 
-
 export default function AboutUs() {
     return (
         <div className="bg-cover h-full w-full flex" style={{ backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${Beach})`,}}>
-            <div className="m-[100px] w-[1248px] h-[1560px] bg-[rgba(217,217,217,0.5)] p-[40px]">
+            <div className="m-[100px] w-[1248px] h-[1560px] bg-[rgba(217,217,217,0.5)] p-[40px] justify-center">
                 <h1 className="text-5xl font-bold text-[#2D5128] uppercase drop-shadow-md mt-5">About Us</h1>
 
                 <div className="my-6 h-[2px] w-[85%] bg-white"></div>
