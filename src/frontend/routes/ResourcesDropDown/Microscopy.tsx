@@ -12,12 +12,17 @@ export default function Microscopy(){
                     identifying algal structures. Experiment with different levels to find
                     what works best for your sample.
                 </p>
+                <div className="grid grid-cols-2">
+                <img src="../../../../public/LabPic/microscopic.jpg" alt="microscopic" className="m-5 w-[350px] h-[400px]"/>
+                <img src="../../../../public/LabPic/algae.png" alt="algae" className="m-5 w-[350px] h-[400px]"/>
+                </div>
                 <p className="mb-5 text-[19px]">
                     For more information, please visit the following links:
                 </p>
                 <div className="flex flex-col">
                     <a href="https://plantnet.rbgsyd.nsw.gov.au/PlantNet/fwalgae/Introduction/observe.htm#:~:text=The%20simplest%20method%20is%20to,to%20view%20under%20a%20microscope"
-                       className="text-blue-600 visited:text-purple-600 underline ..."> How to Preserve Fresh Water Algae </a>
+                       className="text-blue-600 visited:text-purple-600 underline ..."> How to Preserve Fresh Water
+                        Algae </a>
                 </div>
             </div>
         </div>

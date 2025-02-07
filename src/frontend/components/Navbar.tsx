@@ -24,7 +24,7 @@ export default function Navbar() {
             </div>
 
             <div
-                className={`absolute top-[5rem] left-0 w-full flex flex-col md:w-auto md:static md:flex-row md:gap-6 md:flex ${
+                className={`absolute top-[6rem] flex flex-col md:w-auto md:static md:flex-row md:gap-6 md:flex ${
                     menuOpen ? 'block' : 'hidden'
                 }`}
             >

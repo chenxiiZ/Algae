@@ -12,6 +12,7 @@ export default function Preservation(){
                     A general guideline is to add 1 mL of Lugol’s solution per 100 mL of sample,
                     but this may vary based on your needs. Ensure the sample is stored in a cool, dark place.
                 </p>
+                <img src="../../../../public/LabPic/fiona.png" alt="fiona" className="m-5 w-[350px] h-[400px]"/>
                 <p className="mb-5 text-[19px]">
                     For more information, please visit the following links:
                 </p>

@@ -20,6 +20,22 @@ export default function AboutUs() {
                     awareness and educational efforts.
                 </p>
 
+                <h2 className="text-[#2D5128] mt-5 text-2xl font-bold drop-shadow-md">Our Mission</h2>
+                <p className="mt-2"> At the heart of our algae detection project is the commitment
+                    to
+                    safeguarding aquatic ecosystems and promoting sustainable water management. Our mission is to
+                    provide
+                    innovative tools and solutions to detect algae early, prevent harmful blooms, and protect
+                    communities
+                    that depend on clean water.
+                </p>
+                <p className="mt-2">
+                    We envision a world where the balance between human activities and natural ecosystems is maintained,
+                    ensuring that algae remain a vital resource rather than a threat. Together, we can create a future
+                    where science and technology work hand-in-hand to preserve our planet’s health
+                </p>
+
+
                 <div className="my-6 h-[2px] w-[85%] bg-white mt-10"></div>
 
                 <h3 className="text-[#2D5128] mt-5 text-2xl font-bold drop-shadow-md">Special Thanks To: </h3>

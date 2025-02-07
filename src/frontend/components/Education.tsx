@@ -37,6 +37,11 @@ function Education() {
                     </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
+                    <Link to="/algae-and-climate" className="block w-full px-4 py-2 hover:bg-gray-100">
+                        Algae and Climate Change
+                    </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
                     <Link to="/fun-facts" className="block w-full px-4 py-2 hover:bg-gray-100">
                         Fun Facts About Algae!
                     </Link>
