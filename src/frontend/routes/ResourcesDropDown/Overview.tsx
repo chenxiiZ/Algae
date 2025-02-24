@@ -21,8 +21,8 @@ export default function Overview(){
                     upload to our platform.
                 </p>
                 <div className="grid grid-cols-2">
-                <img src="../../../../public/LabPic/lab.jpg" alt="lab" className="m-5 w-[350px] h-[250px]"/>
-                <img src="../../../../public/LabPic/phoebe.jpg" alt="phoebe" className="m-5 w-[350px] h-[400px]"/>
+                <img src="/LabPic/lab.jpg" alt="lab" className="m-5 w-[350px] h-[250px]"/>
+                <img src="/LabPic/phoebe.jpg" alt="phoebe" className="m-5 w-[350px] h-[400px]"/>
                 </div>
             </div>
         </div>

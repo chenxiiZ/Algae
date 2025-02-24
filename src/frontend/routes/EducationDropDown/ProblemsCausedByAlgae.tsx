@@ -6,7 +6,7 @@ export default function ProblemsCausedByAlgae(){
             <div className="m-[100px] w-[1100px] h-auto bg-[rgba(217,217,217,0.5)] p-[40px]">
                 <h1 className="text-[#2D5128] mt-5 text-[38px] font-bold drop-shadow-md mb-5"> Problems Caused by Algae </h1>
                 <div className="text-[19px]">
-                    <img src="../../../../public/LabPic/image3.png" alt="ImageThree" className="float-right m-5"/>
+                    <img src="/LabPic/image3.png" alt="ImageThree" className="float-right m-5"/>
                     <p className="mb-5 mt-5"> Despite their benefits, algae can have serious negative impacts when their
                         growth becomes unbalanced.
                         Under certain conditions—such as excess nutrients from agricultural runoff, warm temperatures,

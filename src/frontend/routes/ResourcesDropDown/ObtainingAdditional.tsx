@@ -7,7 +7,7 @@ export default function ObtainingAdditional(){
                 <h1 className="text-[#2D5128] mt-5 text-[38px] font-bold drop-shadow-md mb-5"> Obtaining Additional
                     Parameters</h1>
                 <h2 className="text-[26px] text-[#2D5128] mb-5 underline">On-site Parameters:</h2>
-                <img src="../../../../public/LabPic/angus1.jpg" alt="angus2"
+                <img src="/LabPic/angus1.jpg" alt="angus2"
                      className="m-5 w-[200px] h-[250px] float-right"/>
                 <h2 className="text-[20px] mb-5">Temperature:</h2>
                 <p className="mb-5">
@@ -36,7 +36,7 @@ export default function ObtainingAdditional(){
                     which affects light penetration and algal growth. High turbidity may suggest sediment disturbance,
                     runoff, or algal blooms.
                 </p>
-                <img src="../../../../public/LabPic/angus2.jpg" alt="angus2"
+                <img src="/LabPic/angus2.jpg" alt="angus2"
                      className="m-5 w-[200px] h-[250px] float-right"/>
                 <h2 className="text-[20px] mb-5">Salinity: </h2>
                 <p className="mb-5">
@@ -57,7 +57,7 @@ export default function ObtainingAdditional(){
                     Use a thermometer or a dissolved oxygen meter with a built-in temperature sensor. Ensure the probe
                     submerged and wait for the reading to stabilize.
                 </p>
-                <img src="../../../../public/LabPic/ryan1.jpg" alt="ryan" className="m-5 w-[200px] h-[250px]"/>
+                <img src="/LabPic/ryan1.jpg" alt="ryan" className="m-5 w-[200px] h-[250px]"/>
                 <h2 className="text-[20px] mb-5">Nitrogen levels:</h2>
                 <p className="mb-5 mt-5"> Analyze nitrogen levels using a test kit or spectrophotometer. Nitrogen is a
                     key
@@ -65,7 +65,7 @@ export default function ObtainingAdditional(){
                     and high levels often indicate pollution from agricultural runoff or wastewater. Measuring nitrogen
                     helps us track nutrient loading and its impact on algal growth.
                 </p>
-                <img src="../../../../public/LabPic/lab2.jpg" alt="lab2" className="m-5 w-[200px] h-[250px]"/>
+                <img src="/LabPic/lab2.jpg" alt="lab2" className="m-5 w-[200px] h-[250px]"/>
                 <h2 className="text-[20px] mb-5">Phosphorus levels:</h2>
                 <p className="mb-2 mt-5">
                     Use a colorimetric test or spectrophotometer to assess phosphorus levels. Like nitrogen,

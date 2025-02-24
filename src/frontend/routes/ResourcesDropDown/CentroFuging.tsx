@@ -15,7 +15,7 @@ export default function CentroFuging(){
                     images and more accurate
                     microscopic observations.
                 </p>
-                <img src="../../../../public/LabPic/centrofuging.png" alt="centrofuging" className="m-5 w-[350px] h-[250px]"/>
+                <img src="/LabPic/centrofuging.png" alt="centrofuging" className="m-5 w-[350px] h-[250px]"/>
                 <p className="mb-5 text-[19px]">
                     For more information, please visit the following links:
                 </p>

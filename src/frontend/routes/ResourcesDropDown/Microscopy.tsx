@@ -13,8 +13,8 @@ export default function Microscopy(){
                     what works best for your sample.
                 </p>
                 <div className="grid grid-cols-2">
-                <img src="../../../../public/LabPic/microscopic.jpg" alt="microscopic" className="m-5 w-[350px] h-[400px]"/>
-                <img src="../../../../public/LabPic/algae.png" alt="algae" className="m-5 w-[350px] h-[400px]"/>
+                <img src="/LabPic/microscopic.jpg" alt="microscopic" className="m-5 w-[350px] h-[400px]"/>
+                <img src="/LabPic/algae.png" alt="algae" className="m-5 w-[350px] h-[400px]"/>
                 </div>
                 <p className="mb-5 text-[19px]">
                     For more information, please visit the following links:
