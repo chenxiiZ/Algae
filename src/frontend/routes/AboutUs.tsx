@@ -45,7 +45,7 @@ export default function AboutUs() {
                     <div>
                         <p className="font-bold">Dr.Chong Yee Ling</p>
                         <p className="text-[#AC2B37]">Senior Lecturer II</p>
-                        <p className="text-[#AC2B37]">The Education University of Hong Kong</p>
+                        <p className="text-black">The Education University of Hong Kong</p>
                     </div>
                 </div>
 
