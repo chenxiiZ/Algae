@@ -9,12 +9,12 @@ export default function ObtainingAdditional(){
                 <h2 className="text-[26px] text-[#2D5128] mb-5 underline">On-site Parameters:</h2>
                 <img src="../../../../public/LabPic/angus1.jpg" alt="angus2"
                      className="m-5 w-[200px] h-[250px] float-right"/>
-                <h3 className="text-[20px] mb-5">Temperature:</h3>
+                <h2 className="text-[20px] mb-5">Temperature:</h2>
                 <p className="mb-5">
                     Use a thermometer or a dissolved oxygen meter with a built-in temperature sensor.
                     Ensure the probe is fully submerged and wait for the reading to stabilize.
                 </p>
-                <h4 className="text-[20px] mb-5">Dissolved Oxygen: </h4>
+                <h2 className="text-[20px] mb-5">Dissolved Oxygen: </h2>
                 <p className="mb-10">
                     Measure dissolved oxygen with a dissolved oxygen meter. Follow the manufacturer’s instructions
                     carefully,
@@ -22,14 +22,14 @@ export default function ObtainingAdditional(){
                     natural oxygen levels,
                     take this measurement after collecting your water samples.
                 </p>
-                <h5 className="text-[26px] text-[#2D5128] mb-5 underline">At-Lab Parameters: </h5>
+                <h2 className="text-[26px] text-[#2D5128] mb-5 underline">At-Lab Parameters: </h2>
                 <p className="mb-5">
                     Use a thermometer or a dissolved oxygen meter with a built-in temperature sensor. Ensure the probe
                     submerged and wait
                     for the reading to stabilize. The different parameters to take in the lab vary extensively based on
                     the equipment you have available.
                 </p>
-                <h6 className="text-[20px] mb-5">Turbidity:</h6>
+                <h2 className="text-[20px] mb-5">Turbidity:</h2>
                 <p className="mb-5">
                     Measure turbidity using a turbidity meter or a Secchi disk for a rough estimate. Turbidity indicates
                     the clarity of the water,
@@ -38,7 +38,7 @@ export default function ObtainingAdditional(){
                 </p>
                 <img src="../../../../public/LabPic/angus2.jpg" alt="angus2"
                      className="m-5 w-[200px] h-[250px] float-right"/>
-                <h6 className="text-[20px] mb-5">Salinity: </h6>
+                <h2 className="text-[20px] mb-5">Salinity: </h2>
                 <p className="mb-5">
                     Use a refractometer or conductivity meter to determine salinity levels. Salinity impacts the types
                     of algae present,
@@ -47,7 +47,7 @@ export default function ObtainingAdditional(){
                     helps us identify which algae species are most common in different aquatic conditions.
                 </p>
 
-                <h7 className="text-[20px] mb-5"> pH:</h7>
+                <h2 className="text-[20px] mb-5"> pH:</h2>
                 <p className="mb-2 mt-5">
                     Test pH using pH strips or a digital pH meter. pH influences algal growth, with most species
                     thriving in a slightly alkaline range (around 7–8).
@@ -58,7 +58,7 @@ export default function ObtainingAdditional(){
                     submerged and wait for the reading to stabilize.
                 </p>
                 <img src="../../../../public/LabPic/ryan1.jpg" alt="ryan" className="m-5 w-[200px] h-[250px]"/>
-                <h8 className="text-[20px] mb-5">Nitrogen levels:</h8>
+                <h className="text-[20px] mb-5">Nitrogen levels:</h>
                 <p className="mb-5 mt-5"> Analyze nitrogen levels using a test kit or spectrophotometer. Nitrogen is a
                     key
                     nutrient for algae,
@@ -66,7 +66,7 @@ export default function ObtainingAdditional(){
                     helps us track nutrient loading and its impact on algal growth.
                 </p>
                 <img src="../../../../public/LabPic/lab2.jpg" alt="lab2" className="m-5 w-[200px] h-[250px]"/>
-                <h9 className="text-[20px] mb-5">Phosphorus levels:</h9>
+                <h2 className="text-[20px] mb-5">Phosphorus levels:</h2>
                 <p className="mb-2 mt-5">
                     Use a colorimetric test or spectrophotometer to assess phosphorus levels. Like nitrogen,
                     phosphorus is a major nutrient that can fuel algal blooms, sometimes leading to harmful
