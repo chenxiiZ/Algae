@@ -58,7 +58,7 @@ export default function ObtainingAdditional(){
                     submerged and wait for the reading to stabilize.
                 </p>
                 <img src="../../../../public/LabPic/ryan1.jpg" alt="ryan" className="m-5 w-[200px] h-[250px]"/>
-                <h className="text-[20px] mb-5">Nitrogen levels:</h>
+                <h2 className="text-[20px] mb-5">Nitrogen levels:</h2>
                 <p className="mb-5 mt-5"> Analyze nitrogen levels using a test kit or spectrophotometer. Nitrogen is a
                     key
                     nutrient for algae,
