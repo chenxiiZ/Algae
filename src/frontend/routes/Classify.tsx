@@ -73,7 +73,6 @@ export function Classify() {
                     )}
                 </div>
 
-
                 <div className="space-y-4">
                     <div>
                         <label className="block text-sm font-medium mb-2">Time: </label>

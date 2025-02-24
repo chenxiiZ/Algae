@@ -43,8 +43,9 @@ export default function AboutUs() {
                     <img src="/sponsor.JPG" alt="sponsor"
                          className="w-[130px] h-[155px]  border-4 border-white drop-shadow-md float-left"/>
                     <div>
-                        <p className="font-bold">Dr Chong Yee Ling</p>
+                        <p className="font-bold">Dr.Chong Yee Ling</p>
                         <p className="text-[#AC2B37]">Senior Lecturer II</p>
+                        <p className="text-[#AC2B37]">The Education University of Hong Kong</p>
                     </div>
                 </div>
 
