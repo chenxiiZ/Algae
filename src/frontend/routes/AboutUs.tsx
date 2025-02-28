@@ -32,7 +32,7 @@ export default function AboutUs() {
                 <p className="mt-2">
                     We envision a world where the balance between human activities and natural ecosystems is maintained,
                     ensuring that algae remain a vital resource rather than a threat. Together, we can create a future
-                    where science and technology work hand-in-hand to preserve our planet’s health
+                    where science and technology work hand-in-hand to preserve our planet’s health.
                 </p>
 
 

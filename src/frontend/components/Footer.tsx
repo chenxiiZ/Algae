@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <div
-            className="bg-[#E4EB9C] h-auto w-full grid grid-cols-4 justify-items-center text-[#5D5A5A] gap-6 p-6 ">
+            className="bg-[#E4EB9C] h-auto w-full grid grid-cols-5 justify-items-center text-[#5D5A5A] gap-6 p-6 ">
 
             <div className="flex flex-col items-start text-sm">
                 <img src="/HKUEdu.webp" alt="logo" className="h-[65px] w-auto"/>
@@ -44,10 +44,40 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col text-xl items-start">
-                    <h3 className="mb-5 text-xl">Contact Us</h3>
-                    <p className="text-sm">Email: gr-algaec25@wpi.edu</p>
-                    <p className="text-sm">Address: 100 Institute Road, Worcester, MA, 01608</p>
+                <h3 className="mb-5 text-xl">Resources</h3>
+                <div className="flex flex-col space-y-2">
+                    <Link to="/overview" className="hover:underline text-sm">
+                        Overview
+                    </Link>
+                    <Link to="/choosing-location" className="hover:underline text-sm">
+                        Choosing a Location
+                    </Link>
+                    <Link to="/obtaining-additional" className="hover:underline text-sm">
+                        Obtaining Additional Parameters
+                    </Link>
+                    <Link to="/centro-fuging" className="hover:underline text-sm">
+                        Centrofuging
+                    </Link>
+                    <Link to="/preservation" className="hover:underline text-sm">
+                        Preservation
+                    </Link>
+                    <Link to="/microscopy" className="hover:underline text-sm">
+                        Microscopy
+                    </Link>
+                    <Link to="/taking-images" className="hover:underline text-sm">
+                        Taking Images
+                    </Link>
+                </div>
             </div>
+
+
+            <div className="flex flex-col text-xl items-start">
+                <h3 className="mb-5 text-xl">Contact Us</h3>
+                <p className="text-sm">Email: gr-algaec25@wpi.edu</p>
+                <p className="text-sm">Address: 100 Institute Road, Worcester, MA, 01608</p>
+            </div>
+
+
         </div>
     );
 }

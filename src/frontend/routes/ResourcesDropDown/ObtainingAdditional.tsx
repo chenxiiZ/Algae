@@ -22,13 +22,8 @@ export default function ObtainingAdditional(){
                     natural oxygen levels,
                     take this measurement after collecting your water samples.
                 </p>
-                <h2 className="text-[26px] text-[#2D5128] mb-5 underline">At-Lab Parameters: </h2>
-                <p className="mb-5">
-                    Use a thermometer or a dissolved oxygen meter with a built-in temperature sensor. Ensure the probe
-                    submerged and wait
-                    for the reading to stabilize. The different parameters to take in the lab vary extensively based on
-                    the equipment you have available.
-                </p>
+                <h2 className="text-[26px] text-[#2D5128] mb-5 underline">In-Lab Parameters: </h2>
+
                 <h2 className="text-[20px] mb-5">Turbidity:</h2>
                 <p className="mb-5">
                     Measure turbidity using a turbidity meter or a Secchi disk for a rough estimate. Turbidity indicates
@@ -53,10 +48,7 @@ export default function ObtainingAdditional(){
                     thriving in a slightly alkaline range (around 7–8).
                     Drastic pH changes can indicate pollution or environmental stress, affecting algae populations.
                 </p>
-                <p className="mb-5">
-                    Use a thermometer or a dissolved oxygen meter with a built-in temperature sensor. Ensure the probe
-                    submerged and wait for the reading to stabilize.
-                </p>
+
                 <img src="/LabPic/ryan1.jpg" alt="ryan" className="m-5 w-[200px] h-[250px]"/>
                 <h2 className="text-[20px] mb-5">Nitrogen levels:</h2>
                 <p className="mb-5 mt-5"> Analyze nitrogen levels using a test kit or spectrophotometer. Nitrogen is a
@@ -69,13 +61,8 @@ export default function ObtainingAdditional(){
                 <h2 className="text-[20px] mb-5">Phosphorus levels:</h2>
                 <p className="mb-2 mt-5">
                     Use a colorimetric test or spectrophotometer to assess phosphorus levels. Like nitrogen,
-                    phosphorus is a major nutrient that can fuel algal blooms, sometimes leading to harmful
-                    conditions like eutrophication. Monitoring phosphorus helps us understand nutrient dynamics
+                    phosphorus is a major nutrient that can fuel algal blooms. Monitoring phosphorus helps us understand nutrient dynamics
                     and potential risks to aquatic ecosystems.
-                </p>
-                <p className="mb-5">
-                    Use a thermometer or a dissolved oxygen meter with a built-in temperature sensor. Ensure the probe
-                    submerged and wait for the reading to stabilize.
                 </p>
 
             </div>
