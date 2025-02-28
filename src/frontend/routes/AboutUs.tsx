@@ -3,7 +3,7 @@ import Beach from "../../assets/beachpic.jpeg";
 export default function AboutUs() {
     return (
         <div className="bg-cover h-full w-full flex" style={{ backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${Beach})`,}}>
-            <div className="m-[100px] w-[1248px] h-[1560px] bg-[rgba(217,217,217,0.5)] p-[40px] justify-center">
+            <div className="m-[100px] w-[1248px]  bg-[rgba(217,217,217,0.5)] p-[40px] justify-center">
                 <h1 className="text-5xl font-bold text-[#2D5128] uppercase drop-shadow-md mt-5">About Us</h1>
 
                 <div className="my-6 h-[2px] w-[85%] bg-white"></div>
@@ -32,7 +32,7 @@ export default function AboutUs() {
                 <p className="mt-2">
                     We envision a world where the balance between human activities and natural ecosystems is maintained,
                     ensuring that algae remain a vital resource rather than a threat. Together, we can create a future
-                    where science and technology work hand-in-hand to preserve our planet’s health
+                    where science and technology work hand-in-hand to preserve our planet’s health.
                 </p>
 
 
@@ -45,7 +45,7 @@ export default function AboutUs() {
                     <div>
                         <p className="font-bold">Dr.Chong Yee Ling</p>
                         <p className="text-[#AC2B37]">Senior Lecturer II</p>
-                        <p className="text-[#AC2B37]">The Education University of Hong Kong</p>
+                        <p className="text-black">The Education University of Hong Kong</p>
                     </div>
                 </div>
 

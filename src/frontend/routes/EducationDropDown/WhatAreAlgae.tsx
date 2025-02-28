@@ -6,7 +6,7 @@ export default function WhatAreAlgae(){
         <div className="bg-cover h-full w-full flex justify-center" style={{ backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${Beach})`,}}>
             <div className="m-[100px] w-[1100px] h-auto bg-[rgba(217,217,217,0.5)] p-[40px]">
                 <h1 className="text-[#2D5128] mt-5 text-[38px] font-bold drop-shadow-md mb-5">What Are Algae?</h1>
-                <img src="../../../../public/LabPic/image1.png" alt="ImageOne" className="float-right m-5"/>
+                <img src="/LabPic/image1.png" alt="ImageOne" className="float-right m-5"/>
                 <p className="mb-5 mt-5 text-[19px]">Algae are a diverse group of photosynthetic organisms that thrive
                     in aquatic environments,
                     though some can also grow on land in moist conditions. They are not classified as plants, animals,

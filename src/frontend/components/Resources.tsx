@@ -1,4 +1,3 @@
-import React from "react";
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -33,7 +32,7 @@ function Resources() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                     <Link to="/centro-fuging" className="block w-full px-4 py-2 hover:bg-gray-100">
-                        Centrofuging
+                        Centrifuging
                     </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>

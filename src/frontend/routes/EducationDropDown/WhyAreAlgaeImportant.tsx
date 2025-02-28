@@ -6,7 +6,7 @@ export default function WhyAreAlgaeImportant(){
             <div className="m-[100px] w-[1100px] h-auto bg-[rgba(217,217,217,0.5)] p-[40px]">
                 <h1 className="text-[#2D5128] mt-5 text-[38px] font-bold drop-shadow-md mb-5">Why are Algae Important?</h1>
                 <div className="text-[19px]">
-                    <img src="../../../../public/LabPic/image2.png" alt="ImageTwo" className="float-left m-5"/>
+                    <img src="/LabPic/image2.png" alt="ImageTwo" className="float-left m-5"/>
                     <p className="mb-5 mt-5"> Algae play a crucial role in maintaining life on Earth, serving as one of
                         the primary engines of our planet’s ecosystems.
                         They are often referred to as the "lungs of the Earth" because they produce over 50% of the

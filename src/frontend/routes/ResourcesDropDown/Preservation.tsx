@@ -12,7 +12,12 @@ export default function Preservation(){
                     A general guideline is to add 1 mL of Lugol’s solution per 100 mL of sample,
                     but this may vary based on your needs. Ensure the sample is stored in a cool, dark place.
                 </p>
-                <img src="../../../../public/LabPic/fiona.png" alt="fiona" className="m-5 w-[350px] h-[400px]"/>
+                <p className="mb-5 text-[13px]">
+                    (Lugol's solution is a liquid iodine-based preservative commonly used in biological studies
+                    to fix and preserve samples, including algae. It enhances sample visibility by staining cells
+                    and prevents decomposition, ensuring the integrity of the sample for later analysis.)
+                </p>
+                <img src="/LabPic/fiona.png" alt="fiona" className="m-5 w-[350px] h-[400px]"/>
                 <p className="mb-5 text-[19px]">
                     For more information, please visit the following links:
                 </p>
@@ -21,8 +26,6 @@ export default function Preservation(){
                        className="text-blue-600 visited:text-purple-600 underline ..."> Algae Preservation Technics </a>
                     <a href="https://courses.botany.wisc.edu/botany_330/preservation.html"
                        className="text-blue-600 visited:text-purple-600 underline"> Preservation of Algae Samples </a>
-                    <a href="https://plantnet.rbgsyd.nsw.gov.au/PlantNet/fwalgae/Introduction/preserve.htm"
-                       className="text-blue-600 visited:text-purple-600 underline ..."> How to preserve FW Algae </a>
                 </div>
             </div>
         </div>
