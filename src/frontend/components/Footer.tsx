@@ -40,6 +40,9 @@ export default function Footer() {
                     <Link to="/fun-facts" className="hover:underline text-sm">
                         Fun Facts about Algae!
                     </Link>
+                    <Link to="/citation" className="hover:underline text-sm">
+                        Citation
+                    </Link>
                 </div>
             </div>
 
@@ -66,6 +69,9 @@ export default function Footer() {
                     </Link>
                     <Link to="/taking-images" className="hover:underline text-sm">
                         Taking Images
+                    </Link>
+                    <Link to="/citation" className="hover:underline text-sm">
+                        Citation
                     </Link>
                 </div>
             </div>

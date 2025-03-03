@@ -16,7 +16,11 @@ export default function ChoosingLocation(){
                     such as nearby vegetation, water movement, and weather conditions can also help provide context for
                     your findings.
                 </p>
-                <img src="/LabPic/ocean.jpg" alt="lab" className="m-5 w-[350px] h-[250px]"/>
+                <div className="grid grid-cols-2">
+                    <img src="/LabPic/ocean.jpg" alt="lab" className="m-5 w-[350px] h-[250px]"/>
+                    <img src="/LabPic/view.jpeg" alt="lab" className="m-5 w-[350px] h-[250px]"/>
+                </div>
+
             </div>
         </div>
     );

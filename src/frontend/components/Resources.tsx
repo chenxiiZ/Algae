@@ -50,6 +50,11 @@ function Resources() {
                         Taking Images
                     </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem>
+                    <Link to="/citation" className="block w-full px-4 py-2 hover:bg-gray-100">
+                        Citation
+                    </Link>
+                </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
     );
