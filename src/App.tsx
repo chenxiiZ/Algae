@@ -18,6 +18,7 @@ import ObtainingAdditional from "@/frontend/routes/ResourcesDropDown/ObtainingAd
 import Overview from "@/frontend/routes/ResourcesDropDown/Overview.tsx";
 import Preservation from "@/frontend/routes/ResourcesDropDown/Preservation.tsx";
 import TakingImages from "@/frontend/routes/ResourcesDropDown/TakingImages.tsx";
+import Citation from "@/frontend/routes/ResourcesDropDown/Citation.tsx";
 
 function App() {
     return (
@@ -41,6 +42,7 @@ function App() {
                 <Route path="/overview" element={<Overview />} />
                 <Route path="/preservation" element={<Preservation />} />
                 <Route path="/taking-images" element={<TakingImages />} />
+                <Route path="/citation" element={<Citation />} />
             </Routes>
             <Footer /> {/* Render Footer */}
         </>
